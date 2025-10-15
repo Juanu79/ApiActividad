@@ -17,16 +17,23 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
+  flex-wrap: wrap;
 }
 
 .menu a {
+  background-color: #4a0d0d;
   color: #f5d67b;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s, transform 0.3s, background 0.3s;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin: 4px;
+  border: 1px solid #d4af37;
 }
 
 .menu a:hover {
+  background-color: #7b1113;
   color: #fff4cc;
   transform: scale(1.05);
 }
@@ -171,28 +178,18 @@ input[type="text"]:focus {
 
 /* Pantallas pequeñas (celulares) */
 @media (max-width: 768px) {
-
-  /* Menú */
   .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px;
   }
 
   .menu a {
-    display: block;
     width: 100%;
-    padding: 8px 0;
+    text-align: center;
     font-size: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .menu a:last-child {
-    border-bottom: none;
-  }
-
-  /* Contenido general */
   .pagina {
     padding: 10px;
   }
@@ -201,7 +198,6 @@ input[type="text"]:focus {
     font-size: 1.5rem;
   }
 
-  /* Tarjetas */
   .lista {
     flex-direction: column;
     align-items: center;
