@@ -12,7 +12,7 @@ export default function DetalleLibros() {
   if (!libro) return <p>Libro no encontrado...</p>;
 
   return (
-    <div className="detalle">
+    <div className="detalle-libro">
       <button className="volver" onClick={() => navigate(-1)}>
         ⬅ Volver
       </button>
@@ -36,9 +36,8 @@ export default function DetalleLibros() {
         🌐 Leer en línea
       </a>
 
-      {/* 🔹 Aquí el botón de Favoritos */}
+      {/* 🔹 Aquí irá luego el botón de favoritos */}
       <button className="boton-fav">❤️ Agregar a favoritos</button>
     </div>
   );
 }
-

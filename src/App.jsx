@@ -6,6 +6,7 @@ import Filtro from "./paginas/filtro";
 import Original from "./paginas/original";
 import Informativa from "./paginas/informativa";
 import Favoritos from "./paginas/favoritos";
+import DetalleLibro from "./paginas/detalleLibro"; // 🔹 nueva página para el detalle
 
 import "./App.css";
 
@@ -27,6 +28,9 @@ export default function App() {
           <Route path="/original" element={<Original />} />
           <Route path="/favoritos" element={<Favoritos />} />
           <Route path="/informativa" element={<Informativa />} />
+
+          {/* 🔹 Nueva ruta para mostrar detalle del libro */}
+          <Route path="/detalle/:id" element={<DetalleLibro />} />
         </Routes>
       </Router>
     </AppProvider>
