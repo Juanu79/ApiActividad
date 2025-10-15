@@ -166,3 +166,80 @@ input[type="text"]:focus {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #f0d88a;
 }
+
+/* ======= AJUSTES RESPONSIVOS ======= */
+
+/* Pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+
+  /* Menú */
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .menu a:last-child {
+    border-bottom: none;
+  }
+
+  /* Contenido general */
+  .pagina {
+    padding: 10px;
+  }
+
+  .pagina h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Tarjetas */
+  .lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .tarjeta {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .imagen {
+    height: 200px;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+
+  .recharts-wrapper {
+    width: 100%;
+    max-width: 90%;
+    padding: 15px;
+  }
+}
+
+/* Pantallas muy pequeñas (menos de 400px) */
+@media (max-width: 400px) {
+  .menu a {
+    font-size: 0.9rem;
+    padding: 6px 0;
+  }
+
+  .tarjeta {
+    width: 95%;
+  }
+
+  .imagen {
+    height: 180px;
+  }
+}
