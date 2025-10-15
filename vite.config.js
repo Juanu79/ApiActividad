@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/ApiActividad/', // 👈 con barras al inicio y final
+  base: '/ApiActividad/', // 👈 importante: igual al nombre del repositorio
 })
