@@ -6,7 +6,8 @@ import Filtro from "./paginas/filtro";
 import Original from "./paginas/original";
 import Informativa from "./paginas/informativa";
 import Favoritos from "./paginas/favoritos";
-import DetalleLibro from "./paginas/detalleLibro"; // 🔹 nueva página para el detalle
+import DetalleLibro from "./componentes/DetalleLibros";
+
 
 import "./App.css";
 
